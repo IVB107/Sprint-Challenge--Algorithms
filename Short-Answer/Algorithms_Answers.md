@@ -29,10 +29,10 @@ Exercise 1:
 
   C:
     <!-- 
-    def bunnyEars(bunnies):
-        if bunnies == 0:
-          return 0
-
-        return 2 + bunnyEars(bunnies-1)
+    def bunnyEars(bunnies):           => O(n)
+      if bunnies == 0:
+        return 0
+      return 2 + bunnyEars(bunnies-1) => O(n-1)
     -->
-    - This algorithm has a runtime of O(bunnies*bunnies-1) => O(n*n)
+    
+    - This algorithm has a runtime of O(bunnies*bunnies-1) => O(n*2)
