@@ -36,3 +36,24 @@ Exercise 1:
     -->
     
     - This algorithm has a runtime of O(bunnies*bunnies-1) => O(n*2)
+
+Exercise 2:
+
+-- divide & conquer technique --
+
+1. n = number of floors to search
+2. start at the middle floor and drop an egg
+
+if the egg breaks:
+  - go to the middle floor of the bottom half of the building
+  - n = bottom half
+  - repeat step 2
+
+if the egg doesn't break:
+  - go to the middle floor of the top half of the building
+  - n = top half
+  - repeat step 2
+
+3. repeat until only 1 floor remains and return that floor
+
+runtime complexity is O(log n)
