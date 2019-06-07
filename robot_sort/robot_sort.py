@@ -104,6 +104,7 @@ class SortingRobot:
                 self.swap_item()
             self.set_light_off()
             while self.can_move_right() == True:
+
                 self.move_right()
                 if self.compare_item() == 1:
                     # print('Swapping items...')
@@ -128,6 +129,7 @@ class SortingRobot:
                 self.move_left()
             # No swaps, list is sorted
             if self.light_is_on() == False:
+                print('Count: ', self._time)
                 break
 
     # Bubble sort:
